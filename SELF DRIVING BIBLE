@@ -1,0 +1,112 @@
+The Self-Driving Bible
+
+
+My name is Noah and I’ve created this guide in hopes of helping the open source community in self driving. I’ve worked in the industry and have come across many instances where I think we as a whole can make a difference. So let’s begin. I  have experience working in helping shape self driving tech in big corporations. With that being said, I am ready to expose and share my insight on a few things even if it means…. End of Context for now. 
+
+The Neural Network
+Think of this as a baby. A baby will not know from good or bad unless you teach it. For instance the more “bad” data you teach it the more it can realize that hey this is bad and a “NO-NO”. If you teach it “good” data over time the network will understand more good data and realize this is the data that is crucial for my system. 
+There will be discrepancies and errors, dependent on the quality of our data.
+Theoretically the more batches of “data” then we have more examples of how to teach the network. We have to classify whether “data” is good or bad depending on the scene of what we are working on or the layer we are focusing on whether it be traffic lights, stop signs, etc.. 
+Think of teaching the network rules of  the road from the DMV handbook, but also how we “humans” drive as well. How do we teach a car to “learn” to drive safely at all times? 
+
+
+
+Stop Signs.
+Stop Sign: Red, Octogonal shape, 
+In terms of object detection, when a camera sees this shape it needs to “visualize” several key components. The text “STOP” is important. If we make guidelines such as these 1.) Stop text has to have STO meaning at least three letters and pass through the red color and octagonal shape then we will have more “GOOD” data compared to 2.) Stop text having only partial letters like ST like two letters and that's it. 
+Blurriness matters and if text is blurry then we will have more discrepancies in the batch of data in our neural network. It is ideal to have more accurate data than data that is hurried and quickly pushed out to meet certain deadlines and efficiency. 
+Stop signs have poles!!! So in your graphical system you need to make sure that you attach the “stop sign” to a pole relative to the ground. Sometimes the ground isn’t visible due to the scene or there are bushes and you can’t see the actual ground. In those cases it is better to guess appropriately relative to where an actual pole is. 
+The Network will have errors, for example if a VAN has a Stop sign behind its bumper as is a sticker how can the “Network” learn that hey this Stop sign doesn’t matter to me. It’s fake. So we have to distinguish from several key components such as entering a drive thru or fake “Stop” Signs.
+Different countries have different Stop Sign Text like “Alto” in Mexico. Be aware of this. 
+Ever evolving Stop Sign layer w be efficient depending on how you teach the network. 
+
+
+Sometimes in front there will be two stop signs make sure that you teach the car how to follow safe rules of the road. 
+ 
+
+
+Markings in Ground
+
+Marking such as arrows turning to the left or right have to follow several key rules. The markings have to be clear and the arrow tip has to have at least three reasonable points to 1.) Be a Marking 2.) To see the direction of said marking
+L_TurningArrow, R_TurningArrow, F_Arrow,
+
+
+The more marking examples you have that are efficient the quality will boost in your data batch.
+Sometimes Cars will be blocking arrows so this means you shouldn’t “TAG” or object detect yet until the network has more data to understand that hey this is actually a marking in the ground. 
+Sometimes markings will be hidden, obstructed by light or cars or things.Take note of this. 
+
+
+ 
+
+
+
+
+Lanes/Intersection lines
+
+Now Lanes are important and how do we tackle lane lines? If you’re a 3D modeller you’ve come across an orthopedic top view. Let’s suppose you are looking in a top view of an intersection. 
+Since we are only focusing on lane lines we need to be aware that hey my car is about to enter an intersection so take note of this and label that the line is dotted, dashed, double dashed accordingly and the directions.
+If it's a solid white line tag this is. If it’s a passing lane tag it . If there's a bike lane to the right or a golf cart lane tag it. If there is a solid barrier to the left tag it. Such as a barrier diving two lanes.
+How do we know there is a barrier in between??Where there is concrete and light making a fake lane line depending on shadow. You have to keep in mind all this. 
+In a top view there may be trees blocking the lane lines now what? Should we make an estimated guess as to where the lane line follows the path?
+This is where we need to create something to help us. By superimposing we can make a 3D Tunnel to really see what is going on. 
+Sometimes your car can be underneath a tunnel now what? How will I see the lane lines? 
+What about parking lanes? Tag these 
+
+
+Parking Lines
+When you think of parking think of it as a box containing parking information inside.  
+
+2.) You will come across handicap zones or parking lines that are faded so now what? Should I guess these parking lines? Yes or No? Is it safe to do so?
+
+RailRoad Arms 
+
+When an Arm is closed it means it's “activated” when the arm is open it’s “deactivated. Though it's also important to see the “traffic lights” are they on? Is there a train track  in front of you or signage that indicates.
+
+
+
+
+
+
+Speed Zones/Signage/Pedestrians
+Just like stop signs there is a pole present and does it meet my criteria of a speed sign. White background, rectangular shape, etc. 
+Blurry text? Indication that the sign is truly real by what's around us. 
+How do we know you are a real human? Do we stop before a stop line? Do we Stop in a yellow pedestrian lane or unit lights are activated? What if you suddenly walk in front of my car? Keep asking yourself these questions and this will improve your data. 
+
+
+Computer Vision
+All of these things are layers of “semantics” or guidelines/rules of what we teach a car in order for it to behave well. Consisting of 3D videos with a timeline that are perhaps 1-2 min. Then you could see a different perspective Top Aerial view, Side View, 3D world View, Only seeing pure “LINES” think of it as a 3D modelling program when all of this information works in tangent with your other 2D program. BAM!! You got yourself a simple self driving car. 
+Various cameras side of my car panels hidden, front and back, all working to provide “eyes” for me to see and my computer system is quick to react and process large amounts of data in real time. 
+
+
+
+Pre-Made Maps
+Maybe relying purely on computer vision is not your cup of tea and you want to make simulated maps and then update them accordingly. It is possible. 
+
+Combination of Both? 
+How would a combination of both look like? 
+
+
+
+
+
+How is data even collected? 
+Hello Mcflyyy anyone home? GOOGLE MAPS. Google maps is great and its free to use right?? Anyways can you theoretically use google maps to have a top side view of things? Why is Musk so interested in satellite technology? Do you see all these WAYMO cars driving around your neighborhood and in the streets, but why?
+Tesla Cars you don't think are a fleet and capturing a ton of data by their “FLEET” and what's funny is that the consumer is even “BETA” testing new features and these tech giants then use this feedback to improve the system and charge even higher prices lmao. Corporate greed anyone?? I bet you even Tesla utilizes Google Maps to label certain areas…… 
+ZOOX cars, Waymo cars hell even those copycats in NURO. FYI Nuro is a joke and they're literally copying TESLA tech lol. 
+Amazon Prime, Fed Ex. Lyft, Uber, its only a matter of time 
+
+
+
+
+
+
+
+Transparency
+Why is self driving tech bad? Well ethics of course do we see videos of drivers being hurt or pedestrians being hurt? No
+Is our privacy kept safe? Perhaps but you don't have access to your car taking images in your garage lol. Doubtful.
+Why is safety so important to these big corporations because we don't want to see people dying of course or the big car regulators in the US impose rules and regulations for our technology to be halted. 
+What about hackers or people who will find vulnerabilities within the system? Perhaps they already have  
+Are taggers labelling batches of data everyday in corporations such a Tesla, ZOOX, etc. Do they get any recognition or are they simply used ? 
+ETHICS, ETHICS, AND MORE ETHICS!!! 
+Who will pay if I'm in an accident? Is there a black box of information as to what happened? 
+Look at what TOYOTA and MIT/stanford  are doing to help research drifting and enable safer car maneuvers. 
